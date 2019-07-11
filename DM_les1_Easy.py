@@ -3,7 +3,7 @@ __author__ = 'Дегтянников Михаил Александрович'
 
 
 task = ""
-answer = "нет" or "Нет" or "No" or "no"
+answer = ["нет", "Нет", "No", "no"]
 while task != answer:
     print("Домашнее задание")
     print("Задача №1 - Вывести поочередно цифры исходного числа")
@@ -24,7 +24,7 @@ while task != answer:
             number //= 10
         print(list(ls))
         qws1 = input("хотите продолжить? ")
-        if qws1 == answer:
+        if qws1 in answer:
             print('Goodbye')
             break
 
@@ -47,7 +47,7 @@ while task != answer:
         print("Первое число  ", let1)
         print("Второе число  ", let2)
         qws2 = input("хотите продолжить? ")
-        if qws2 == answer:
+        if qws2 in answer:
             print('Goodbye')
             break
     elif task == '3':
@@ -57,11 +57,8 @@ while task != answer:
         else:
             print("Извините, пользование данным ресурсом только с 18 лет")
         qws3 = input("хотите продолжить? ")
-        if qws3 == answer:
+        if qws3 in answer:
             print('Goodbye')
             break
-#    else:
-#        print('определитесь чего вы хотите')
-#        print("Досвидания")
     else:
         continue
