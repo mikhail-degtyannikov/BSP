@@ -15,7 +15,7 @@
 
 give = ["яблоко", "банан", "киви", "арбуз"]
 for i in range(len(give)):
-    print("{:>50}".format(give[i]), i+1)
+    print("{:>5}".format(give[i]), i+1)
 
     #  Задача-2:
 #  Даны два произвольные списка.
@@ -33,8 +33,8 @@ print(result)
 
 s = [123, 2343, 20, 34, 76, 123, 80, 100, 333]
 n = []
-i = len(s)
-for e in range(i):
+l = len(s)
+for e in range(l):
     if s[e] % 2 == 0:
         n.append(s[e]/4)
     else:
